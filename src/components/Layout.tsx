@@ -8,8 +8,8 @@ import iconImage from '@images/icon.png'
 
 const Layout = ({ children }) => {
 	const meta = {
-		title: `Yarrgh: Top Links in Crypto`,
-		description: `Your crypto-friendly link board. Discover new projects, highlight interesting articles, and share new ideas. Curated by the community.`,
+		title: `yarrgh: the pirate network`,
+		description: `the pirate network.`,
 		image: `https://yarrgh.network${cardImage.src}`,
 	}
 
@@ -33,12 +33,12 @@ const Layout = ({ children }) => {
 				<meta property="twitter:description" content={meta.description} />
 				<meta property="twitter:image" content={meta.image} />
 			</Head>
-			<div className="text-white min-h-screen">
-				<div className="fixed inset-0 -z-10 h-screen">
+			<div className="bg-theme-navy text-theme-oldlace min-h-screen font-wigrum">
+				{/* <div className="fixed inset-0 -z-10 h-screen">
 					<Image src={bgImage} placeholder="blur" layout="fill" alt="" />
-				</div>
+				</div> */}
 				<Header />
-				<main className="max-w-2xl mx-auto space-y-8 px-6 md:px-0">{children}</main>
+				<main className="max-w-2xl mx-auto space-y-8 px-6 md:px-0 font-medium font-wigrum">{children}</main>
 				<Toaster position="bottom-right" />
 			</div>
 		</>

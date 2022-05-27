@@ -9,11 +9,11 @@ const Header = () => {
 			<Link href="/">
 				<a className="flex items-center space-x-2">
 					<YarrghLogo className="w-6 h-6" />
-					<span className="font-bold">Yarrgh</span>
+					<span className="font-bold">yarrgh.network</span>
 				</a>
 			</Link>
 			<div className="hidden md:flex items-center space-x-4">
-				<HeaderLink href="/">Trending</HeaderLink>
+				{/* <HeaderLink href="/">Trending</HeaderLink> */}
 				<HeaderLink href="/newest">Newest</HeaderLink>
 				<HeaderLink href="/create">Create</HeaderLink>
 			</div>
